@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Photo Album</title>
+    <link rel="stylesheet" href="photoalbumday4.css">
+</head>
+<body>
+    <div class="album-container">
+        <div class="photo-grid">
+            <div class="photo-item" onclick="openModal('img1')">
+                <img src="gym.jpg.png" alt="Photo 1">
+            </div>
+            <div class="photo-item" onclick="openModal('img2')">
+                <img src="gym1.jpg" alt="Photo 2">
+            </div>
+            <div class="photo-item" onclick="openModal('img3')">
+                <img src="backgroundgymimage.jpg" alt="Photo 3">
+            </div>
+            <!-- Add more photo items here -->
+        </div>
+    </div>
+
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="photoalbumday4.js"></script>
+</body>
+</html>
